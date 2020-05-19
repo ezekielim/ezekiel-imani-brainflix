@@ -48,7 +48,7 @@ const sideVideo = [
   },
   {
     id: null,
-    image: "../images/video-list-4.jpg",
+    image: "../images/video-list-41.jpg",
     title: "Cheap Airline Tickets Great Ways To Save",
     channel: "Emily Harper",
   },
