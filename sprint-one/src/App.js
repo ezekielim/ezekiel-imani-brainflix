@@ -10,6 +10,7 @@ import profilePicture from "./BrainFlix-Sprint-1/Assets/Images/Mohan-muruge.jpg"
 import "./styles/App.css";
 import "./styles/global.css";
 
+//State Data is in index.js
 class App extends Component {
   render() {
     return (
@@ -23,6 +24,7 @@ class App extends Component {
               profilePicture={profilePicture}
               userComments={this.props.userComments}
             />
+            test
           </div>
           <aside className="more-content__next-videos">
             <NextVideoList sideVideo={this.props.sideVideo} />
