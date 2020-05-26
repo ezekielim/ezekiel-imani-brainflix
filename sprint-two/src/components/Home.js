@@ -8,9 +8,10 @@ import CommentsDisplay from "./CommentsDisplay";
 import logo from "../assets/Logo/Logo-brainflix.png";
 import profilePicture from "../assets/Images/Mohan-muruge.jpg";
 
-const api_key = "?api_key=ezekiel-imani";
+//After registering the API gave the following authentication key
+const api_key = "?api_key=3e9f3c01-1370-4a87-adea-cd8d87a01a36";
 const videosUrl = `https://project-2-api.herokuapp.com/videos/${api_key}`;
-const id = "1af0jruup5gu";
+const defaultVideo = "1af0jruup5gu"; //The specific Id for the default video
 
 const mainVideoUrl = (id) =>
   `https://project-2-api.herokuapp.com/videos/${id}?api_key=${api_key}`;
@@ -37,7 +38,7 @@ class Home extends Component {
       })
       .then((res) => {
         const propsId = this.props.match.params.id;
-        const videoId = propsId ? propsId : id;
+        const videoId = propsId ? propsId : defaultVideo;
         this.switchVideo(videoId);
       });
   }
@@ -57,6 +58,7 @@ class Home extends Component {
   }
 
   render() {
+    //Checks the status of mainVideo, then displays the request when the null value is satisfied.
     if (this.state.mainVideo === null) return "Loading...";
     return (
       <div>

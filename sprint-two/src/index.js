@@ -1,13 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./styles/App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
-import { BrowserRouter} from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 
+/* Home.js contains code for state data and API requests. Tried my best to put everything
+as state data since last time I basically just overlooked it by implementing another method
+I found from Stackoverflow */
 ReactDOM.render(
   <BrowserRouter>
-    <App/>
+    <App />
   </BrowserRouter>,
   document.getElementById("root")
 );
