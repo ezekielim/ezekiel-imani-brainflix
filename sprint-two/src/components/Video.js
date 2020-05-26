@@ -4,7 +4,7 @@ import posterImg from "../assets/Images/video-list-0.jpg";
 class Video extends Component {
   render() {
     const videoUrl = `${this.props.video}${this.props.api_key}`;
-    //Video player
+    //Video player.. Poster is added to match the mockup.
     return (
       <main className="Video">
         <video
