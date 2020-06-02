@@ -6,14 +6,16 @@ import "./styles/global.css";
 
 class App extends Component {
   render() {
-
     return (
       <div className="App">
         <Switch>
           <Route path="/" exact component={Home} />
-          <Route path="/videos/:id" render={(props => {
-            return <Home {...props} />
-          })} />
+          <Route
+            path="/videos/:id"
+            render={(props) => {
+              return <Home {...props} />;
+            }}
+          />
           <Route path="/upload" component={Upload} />
         </Switch>
       </div>
